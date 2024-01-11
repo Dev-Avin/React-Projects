@@ -1,0 +1,13 @@
+.bubbles{
+    background-color: rgb(211, 226, 211);
+    width: max(150px , 25vw);
+    aspect-ratio: 1;
+    text-shadow: 2px;
+    color: black;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: max(25px,4vw);
+} 

@@ -1,0 +1,27 @@
+/* projects.css */
+.projs{
+    height: max(320vh,700px);
+    
+}
+h2{
+    font-size: 50px;
+}
+.container {
+    position: relative; /* Add a container with relative positioning */
+  }
+  
+  .left {
+    position: relative; /* Use absolute positioning for the elements */
+      left: 0; /* Position from the left edge of the container */
+  }
+  
+  .right {
+    position: relative;
+    right: 0; /* Position from the right edge of the container */
+    /* Other styles for the .right class */
+  }
+  
+
+.projects-container {
+   height: max(300vh,600px);
+  }

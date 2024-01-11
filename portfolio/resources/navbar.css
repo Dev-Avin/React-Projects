@@ -1,0 +1,93 @@
+.portfolio-navbar {
+    background-color: rgba(0, 0, 0, 1);
+    height: 50px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+.portfolio-navbar-logo {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+.portfolio-navbar-logo-img {
+    background-color: rgb(56, 63, 63);
+    left: 0;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.portfolio-navbar-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 4;
+    height: 100%;
+}
+
+.portfolio-navbar-themes {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.portfolio-navbar-smallscreen {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio-navbar-smallscreen {
+        display: flex;
+    }
+
+    .portfolio-navbar-links {
+        display: none;
+    }
+}
+
+.linkcontainer {
+    background-color: rgb(245, 245, 245);
+    margin: 0 3px;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.portfolio-navbar-links .linkcontainer {
+    transition: transform 0.3s, filter 0.3s, background-color 0.3s;
+}
+
+/* 
+.portfolio-navbar-links:hover {
+
+    background: 0.3;
+} */
+
+.portfolio-navbar-links:hover .linkcontainer {
+    background-color: hwb(33 77% 0%);
+    transform: scale(0.8);
+    filter: blur(20px);
+}
+
+.portfolio-navbar-links .linkcontainer:hover {
+    transform:  scale(1.2);
+    filter: blur(0px);
+}
+

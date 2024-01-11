@@ -1,0 +1,43 @@
+.modal {
+    position: relative;
+    display: flex;
+    height: max(400px, 70vh);
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    background-color: antiquewhite;
+    overflow: hidden; /* Added overflow: hidden */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    /* Removed scaleY as it was commented out in motion animation */
+  }
+  
+  .overlay h1 {
+    color: white;
+    margin: 0;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

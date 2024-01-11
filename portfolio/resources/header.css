@@ -1,0 +1,186 @@
+.portfolio-header{
+    height: max(650px ,150vh);
+    text-align: left;
+    justify-content: left;
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+.align-center{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: max(250px , 25vh);
+
+}
+.portfolio-header-text {
+    /* margin-top: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    width: 100vw;
+    height: max(60vh, 450px);
+    margin-bottom: max(10vh , 80px);
+}
+
+/* .spacer {
+    display: inline-block;
+    left: 0px;
+    width: 15vw;
+    aspect-ratio: 1;
+} */
+
+.portfolio-header-text h1 {
+    width: 80%;
+    font-size: 90px;
+}
+
+.portfolio-header-dec {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50vw;
+    aspect-ratio: 1;
+    overflow: hidden;
+    min-height: 400px; /* Set the desired min-height */
+}
+
+.portfolio-header-dec .roundedsquare {
+    border-radius: 80px;
+    box-sizing: border-box;
+    background-color: rgba(255, 0, 0, 0.4);
+    height: 700px;
+    position: absolute;
+    aspect-ratio: 1;
+    right: -150px;
+    top: 50px;
+}
+
+.roundedsquare.w-30 {
+    background-color: rgb(240, 255, 255);
+    height: 500px;
+    right: -100px;
+    z-index: 3;
+    min-height: 200px; /* Set the desired min-height */
+}
+
+.roundedsquare.w-40 {
+    background-color: rgba(250, 235, 215, 0.6);
+    height: 600px;
+    right: -150px;
+    z-index: 2;
+    min-height: 300px; /* Set the desired min-height */
+}
+
+@media screen and (max-width: 1150px) {
+    .spacer {
+        display: none;
+    }
+    .portfolio-header-text h1 {
+        font-size: 50px;
+        margin: 20px;
+    }
+    .portfolio-header-dec {
+        top: 20px;
+        width: 100%;
+        min-height: 300px; 
+    }
+    .portfolio-header-dec .roundedsquare {
+        border-radius: 80px;
+        box-sizing: border-box;
+        background-color: rgba(255, 0, 0, 0.4);
+        height: 550px;
+        position: absolute;
+        aspect-ratio: 1;
+        right: -150px;
+        top: 50px;
+        
+        min-height: 150px; 
+    }
+
+    .roundedsquare.w-30 {
+        height: 350px;
+        right: -100px;
+        z-index: 3;
+        min-height: 100px; 
+    }
+
+    .roundedsquare.w-40 {
+        background-color: rgba(250, 235, 215, 0.6);
+        height: 450px;
+        right: -150px;
+        z-index: 2;
+        min-height: 150px; 
+    }
+    
+    .portfolio-header-text {
+        margin-top: 20px;
+        min-height: 100px; 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .spacer {
+        display: none;
+    }
+    .portfolio-header{
+        overflow: hidden;
+    }
+    .portfolio-header-text h1 {
+        font-size: 40px;
+    }
+    .portfolio-header-dec {
+        top: 150px;
+        right: -30px;
+        min-height: 500px;
+     
+
+        /* width: 250px;  */
+        /* Set the desired min-height */
+    }
+    .portfolio-header-dec .roundedsquare {
+        border-radius: 80px;
+        box-sizing: border-box;
+        background-color: rgba(255, 0, 0, 0.4);
+        height: 400px;
+        position: absolute;
+        aspect-ratio: 1;
+        right: -150px;
+        /* top: 50px; */
+        /* Set the desired min-height */
+    }
+
+    .roundedsquare.w-30 {
+        height: 250px;
+        right: -150px;
+        z-index: 3;
+        min-height: 100px; /* Set the desired min-height */
+    }
+
+    .roundedsquare.w-40 {
+        background-color: rgba(250, 235, 215, 0.6);
+        height: 300px;
+        right: -150px;
+        z-index: 2;
+        min-height: 150px; /* Set the desired min-height */
+    }
+    
+    .portfolio-header-text {
+        margin-top: 20px;
+        min-height: 100px; /* Set the desired min-height */
+    }
+}
+
+.test-div{
+    height: 90px;
+    aspect-ratio: 1;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

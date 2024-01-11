@@ -1,0 +1,7 @@
+.portfolio-skills{
+ height: max(800px , 120vh);
+}
+.portfolio-skills-container{
+  position: relative;
+  height:max(600px , 100vh) ;
+}
